@@ -1,12 +1,30 @@
 <!doctype html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Skills-Web</title>
-    <link rel="stylesheet" href="/static/styles.css">
-</head>
-<body>
-    <!-- This page needs a form that can capture data about the user's
-    first name, last name, job title, and salary requirements. -->
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Skills-HTML-CSS</title>
+        <link rel="stylesheet" href="/static/styles.css">
+    </head>
+    <body>
+        <!-- form for applying to jobs-->
+        <form action="/application" method="POST">
+            <h1> Thank you for your interest in Ubermelon!</h1>
+            <div id="instructions">
+                <h3>Please fill out the following form and we'll be in touch if we think there is a good fit </h3>
+            </div>
+            First Name:<input type="text" class="input" name="firstname">
+            <br>
+            Last Name:<input id="last"type="text" class="input" name="lastname">
+            <br>
+            Salary Requirement (Enter a number):<input type="text" class="input" name="salary">
+            <br>
+            To which position are you applying?
+            <select name="position" class="input">
+                <option value="Software Engineer">Software Engineer</option>
+                <option value="QA Engineer">QA Engineer</option>
+                <option value="Product Manager">Product Manager</option>
+            </select>
+            <input type="submit" class="input">
+        </form>
+    </body>
 </html>
